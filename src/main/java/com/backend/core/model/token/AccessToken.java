@@ -1,4 +1,4 @@
-package com.lina.cinema.model.token;
+package com.backend.core.model.token;
 
 import javax.persistence.*;
 
