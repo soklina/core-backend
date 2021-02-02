@@ -19,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerUi {
     @Bean
-    public Docket postsApi() {
+    public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))
@@ -28,7 +28,7 @@ public class SwaggerUi {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfoBuilder().title("Api Documentation Prasac BE")
+        return new ApiInfoBuilder().title("Api Documentation Prasac Core backend")
                 .description("Prasac API reference for developers")
                 .termsOfServiceUrl("http://prasac.com.kh")
                 .contact("HakSokhang.com.kh").license("test License")
